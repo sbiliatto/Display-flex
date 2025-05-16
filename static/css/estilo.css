@@ -1,0 +1,141 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+ * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        text-decoration: none;
+        font-family:  "Inter", sans-serif;
+    }
+
+:root{
+    --cor--fundo: #09090b;
+    --cor--fundo--secundario: #18181b;
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
+    --cor-texto: #a1a1aa;
+    --cor-destaque: #f7b733;
+}
+
+body {
+    background-color: var(--cor--fundo);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.conteiner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 25px 0px;
+}
+
+header nav a {
+    color: var(--cor-texto);
+    margin: 0px 10px;
+}
+
+header nav a:hover {
+    color: var(--cor-branco);
+}
+
+.btn {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: 1px solid var(--cor-branco);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--cor-branco);
+    color: var(--cor-preto);
+}
+
+.btn-primary:hover {
+    background-color: transparent !important;
+    color: var(--cor-branco) !important;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--cor-branco);
+}
+
+.btn-outline:hover{
+    background-color: var(--cor-branco) !important;
+    color: var(--cor-preto) !important;
+}
+
+.column {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.title {
+    font-size: 4em;
+    color: var(--cor-texto);
+}
+
+.subtitle {
+    font-size: 2.5em;
+    color: var(--cor-texto);
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.bg-img {
+    height: 60vh;
+    padding-top: 100px;
+    background-image: url(../img/sol.png);
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;    
+}
+
+.space {
+    justify-content: space-between;
+    text-align: center;
+}
+
+.title2{
+    margin-top: 110px;
+    font-size: 3em;
+    color: var(--cor-branco);
+    text-align: start;
+    align-items: flex-start;
+}
+
+p {
+    font-size: 1.5em;
+    text-align: start;
+    color: var(--cor-texto);
+}
+
+.subtitle2{
+    font-size: 3em;
+    color: var(--cor-texto);
+}
+
+.destaque {
+    margin-bottom: 0;
+    color: var(--cor-destaque) !important;
+    font-size: 1em !important;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    
+}
